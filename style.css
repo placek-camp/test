@@ -95,13 +95,22 @@ a{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 135vh;
+  height: 125vh;
 }
 
 .bg-icon{
-  background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all .3s;
+  transition: all 1s;
+}
+
+.bg-icon:hover {
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .bg-section{
@@ -143,6 +152,13 @@ a{
   height: fit-content;
   max-width: 200px;
 }
+
+.flow{
+  width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
 
 .c1 {
   height: 33vh;
