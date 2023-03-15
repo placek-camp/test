@@ -7,15 +7,15 @@ html{
 }
 
 img{
-    width:100%
+  width:100%
 }
 
 h1, h2,h3,h4,h5,h6,p,a{
-    font-family: 'Harenosora';
+  font-family: 'Harenosora';
 }
 
 p{
-    line-height: 2;
+  line-height: 2;
 }
 
 a{
@@ -25,6 +25,11 @@ a{
 
 .text-gold{
   color:#b49d7c
+}
+
+.text-nav{
+  font-family: none;
+  font-weight: bold;
 }
 
 .fs-50{
@@ -85,11 +90,27 @@ a{
   align-items: center;
 }
 
+.bg-mv{
+  background-image: url(img/PLACEK施設全体図.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 135vh;
+
+}
+
 .bg-section{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 37vw;
-    max-height: 535px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 37vw;
+  max-height: 535px;
+}
+
+.bg-consept{
+  background-image:url(img/ベクトルスマートオブジェクト.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .bg-section img{
@@ -112,6 +133,12 @@ a{
   box-shadow: 0 10px 20px 0 rgb(0 0 0 / 50%);
 }
 
+.btn-top{
+  background:#933234;
+  height: fit-content;
+  max-width: 200px;
+}
+
 .c1 {
   height: 33vh;
   object-fit: cover;
@@ -123,7 +150,123 @@ iframe {
 }
 
 .if{
+  position: absolute;
+  bottom: -6px;
+  width: 90%;
+}
+
+
+
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+  top:0;
+    right: -120%;
+  width: 33%;
+    height: 100vh;/*ナビの高さ*/
+  background:#923234;
+    /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 33%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
     position: absolute;
-    bottom: -6px;
-    width: 90%;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+  list-style: none;
+    text-align: center;
+}
+
+#g-nav li a{
+  color: #fff !important;
+  text-decoration: none;
+  padding:10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+  position:absolute;
+    z-index: 9999;/*ボタンを最前面に*/
+  top:50%;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+  background: #933234;
+}
+
+/*×に変化*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background-color: #fff;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
 }
