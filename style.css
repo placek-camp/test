@@ -96,7 +96,12 @@ a{
   background-position: center;
   background-repeat: no-repeat;
   height: 135vh;
+}
 
+.bg-icon{
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg-section{
