@@ -188,7 +188,7 @@ iframe {
     /*ナビのスタート位置と形状*/
   top:0;
     right: -120%;
-  width: 33%;
+  width: 20%;
     height: 100vh;/*ナビの高さ*/
   background:#923234;
     /*動き*/
@@ -205,7 +205,7 @@ iframe {
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
     z-index: 999;
-    width: 33%;
+    width: 20%;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -225,7 +225,7 @@ iframe {
 
 #g-nav li{
   list-style: none;
-    text-align: center;
+  text-align: center;
 }
 
 #g-nav li a{
@@ -238,15 +238,19 @@ iframe {
   font-weight: bold;
 }
 
+.bb-white{
+  border-bottom: solid 1px white;
+}
+
 /*========= ボタンのためのCSS ===============*/
 .openbtn1{
   position:absolute;
-    z-index: 9999;/*ボタンを最前面に*/
-  top:50%;
+  z-index: 9999;/*ボタンを最前面に*/
+  top:0%;
   cursor: pointer;
-    width: 50px;
-    height:50px;
-    border-radius: 50%;
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
   background: #933234;
 }
 

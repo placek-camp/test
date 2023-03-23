@@ -21,12 +21,12 @@
 </head>
 
 <body>
-  <section class="bg-mv">
-    <div class="px-5" style="background:#00000048">
+  <section class="bg-mv position-relative">
+    <div class="px-5 position-fixed w-100" style="background:#00000048;z-index: 99999">
       <div class="row m-auto">
-        <div class="col-1 d-none d-xl-block"></div>
-        <div class="col-2 position-relative">
-          <img class="w-100 position-absolute mt-5" src="img/レイヤー 1.png">
+        <div class="col-2 d-none d-xl-block"></div>
+        <div class="col-1">
+          <img class="w-100 my-3" src="img/レイヤー 1.png">
         </div>
         <div class="col-1 d-xl-none d-block"></div>
         <div class="col-3">
@@ -43,25 +43,22 @@
           </div>
         </div>
         <div class="col-1 position-relative">
-          <div class="openbtn1"><span></span><span></span><span></span></div>
+          <div class="openbtn1 mt-5"><span></span><span></span><span></span></div>
           <nav id="g-nav">
             <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-              <ul>
-                <li><a href="#1">キャンプ(シバヒロ)</a></li>
-                <li><a href="#3">近江牛カフェスタンド（BUTCHER'S）</a></li>
-                <li><a href="#5">イベント利用</a></li>
-                <li><a href="#2">施設案内</a></li>
-                <li><a href="#4">アクセス</a></li>
-                <li><a href="#6">ご利用時間と料金</a></li>
-                <li><a href="#">Contact</a></li>
+              <ul class="w-75 p-0">
+                <li class="mb-5 bb-white"><a href="#1">キャンプ<br>(シバヒロ)</a></li>
+                <li class="mb-5 bb-white"><a href="#3">近江牛カフェスタンド<br>（BUTCHER'S）</a></li>
+                <li class="mb-5 bb-white"><a href="#5">イベント利用</a></li>
+                <li class="mb-5 bb-white"><a href="#2">施設案内</a></li>
+                <li class="mb-5 bb-white"><a href="#4">アクセス</a></li>
+                <li class="mb-5 bb-white"><a href="#6">ご利用時間と料金</a></li>
               </ul>
             </div>
           </nav>
         </div>
-        <div class="col-3">
-        </div>
-        <div class="col-9 text-center text-white">
-          <h2 class="pt-5">
+        <div id="toptext" class="col-12 text-center text-white">
+          <h2>
             滋賀県大津市伊香立に<br>
             キャンプ場・近江牛カフェスタンド・イベントスペース
           </h2>
@@ -87,7 +84,7 @@
 
   <!-- メニュー -->
   <section>
-    <div class="row">
+    <div class="row m-0 w-100">
       <a href="#1" class="col-2 text-center text-white p-5 bg-icon" style="background-image: url(img/b1.png);">
         <img src="img/icon1.png" class="mb-2 mw-50">
         <h5 class="m-0 text-nav">キャンプ<br>(シバヒロ)</h5>
@@ -486,59 +483,70 @@
         <h1 style="color:#b49d7c">周辺施設のご案内</h1>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/1332541_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/白髭神社写真.jpg">
+        <p>観光①　[歴史]<br>
+          浮御堂　車で15分<br>
+          白髭神社　車で37分<br>
+          佐川美術館　車で25分<br>
+          琵琶湖博物館　車で30分<br>
+          比叡山延暦寺　車で21分
         </p>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/25384266_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/マキノメタセコイア並木.jpg">
+        <p>観光②　[レジャー]<br>
+          琵琶湖汽船 ミシガンクルーズ（大津港）車で30分<br>
+          びわ湖テラス　車で37分<br>
+          マキノ メタセコイア並木　車で1時間<br>
+          竹生島クルーズのりば（今津港）車で1時間<br>
+          海津大崎　1時間10分
         </p>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/25523002_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/温泉写真.jpg">
+        <p>公衆浴場・温泉施設<br>
+          スパリゾート雄琴 あがりゃんせ　車で16分<br>
+          守山湯元 水春　車で22分<br>
+          天然温泉 比良とぴあ　車で26分
         </p>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/1650626_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/スーパー写真.jpg">
+        <p>スーパーマーケット<br>
+          フレスコ 仰木の里店　車で8分<br>
+          フレンドマート 雄琴駅前店　車で10分<br>
+          ラ・ムー 雄琴店　車で14分<br>
+          トクヤ 大津堅田店　車で15分<br>
+          道の駅 びわ湖大橋米プラザ　車で17分
         </p>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/1332541_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/ドラッグストア.jpg">
+        <p>ドラッグストア<br>
+          クスリのアオキ 堅田店　車で10分<br>
+          サンドラッグ 雄琴店　車で14分<br>
+          スギ薬局 おごと温泉駅前店　車で10分
         </p>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/25384266_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/コンビニ写真.jpg">
+        <p>コンビニ<br>
+          Lawson 大津仰木の里東店　車で10分<br>
+          Family Mart 大津雄琴駅前店　車で12分<br>
+          Seven Eleven 大津仰木の里店　車で10分
         </p>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/25523002_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/ホームセンター.jpg">
+        <p>ホームセンター<br>
+          コメリホームセンター 堅田店　車で16分<br>
+          アヤハディオ 堅田店　車で13分
         </p>
       </div>
       <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/1650626_s.png">
-        <p>↑画像は仮のものです。<br>
-          施設の紹介テキストが入ります。<br>
-          施設の紹介テキストが入ります。
+        <img class="mb-3" style="height: 160px;" src="img/キャンプ用品.jpg">
+        <p>キャンプ用品販売店<br>
+          Camp Depo 大津堅田店　車で11分<br>
         </p>
       </div>
     </div>
@@ -595,13 +603,19 @@
   <section class="p-5">
     <div class="row m-auto pt-5 mw9">
       <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <div class="mb-3 bg-dark" style="height: 120px;"></div>
+        <a href="#" target="_blank" class="mb-3 bg-dark">
+          <img src="img/ban3.png">
+        </a>
       </div>
       <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <div class="mb-3 bg-dark" style="height: 120px;"></div>
+        <a href="https://ma-nakagawa.sakura.ne.jp/jiro/index.html" target="_blank" class="mb-3 bg-dark">
+          <img src="img/ban1.png">
+        </a>
       </div>
       <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <div class="mb-3 bg-dark" style="height: 120px;"></div>
+        <a href="ohmigyu-tarouya.com" target="_blank" class="mb-3 bg-dark">
+          <img src="img/ban2.png">
+        </a>
       </div>
       <div class="col-12 text-center pt-5">
         <p>©2023　THE PLACE K</p>
@@ -643,6 +657,18 @@
     $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
       $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
       $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+    });
+  </script>
+
+  <script>
+    jQuery(function ($) {
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() < 500) {
+          $('#toptext').fadeIn(400);
+        } else {
+          $('#toptext').fadeOut(400);
+        }
+      });
     });
   </script>
 
