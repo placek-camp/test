@@ -17,33 +17,42 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
   <!-- slickのCSS -->
   <link href="style.css" rel="stylesheet">
+  <link href="sp.css" rel="stylesheet">
   <title>camp</title>
 </head>
 
 <body>
   <section class="bg-mv position-relative">
-    <div class="px-5 position-fixed w-100" style="background:#00000048;z-index: 99999">
+    <div class="px-1 px-lg-5 position-fixed w-100" style="background:#00000048;z-index: 99999">
       <div class="row m-auto">
-        <div class="col-2 d-none d-xl-block"></div>
-        <div class="col-1">
+        <div class="col-0 col-xl-2"></div>
+        <div class="col-2 col-lg-1">
           <img class="w-100 my-3" src="img/レイヤー 1.png">
         </div>
-        <div class="col-1 d-xl-none d-block"></div>
-        <div class="col-3">
+        <div class="col-8 col-xl-3 p-0">
+          <div class="col-12 py-2 text-center text-white d-lg-none d-block">
+            <p>
+              滋賀県大津市伊香立に
+              キャンプ場・<br>近江牛カフェスタンド・イベントスペース
+            </p>
+            <p style="font-weight: bold;">
+              <span style="font-family: none;">「THE PLACE K」</span>がいよいよオープン！
+            </p>
+          </div>
         </div>
-        <div class="col-2 px-2">
+        <div class="col-2 px-2 d-none d-lg-block">
           <div class="text-center text-white mt-5 p-3 center box-shadow btn-top" style="margin: 0 0 0 auto;">
             <img style="width:1.25rem" src="img/154461.png">
             <h5 class="d-inline m-0 ps-2">ご予約</h5>
           </div>
         </div>
-        <div class="col-2 px-2">
+        <div class="col-2 px-2 d-none d-lg-block">
           <div class="text-center text-white mt-5 p-3 center box-shadow btn-top">
             <h5 class="d-inline m-0">お問い合わせ</h5>
           </div>
         </div>
         <div class="col-1 position-relative">
-          <div class="openbtn1 mt-5"><span></span><span></span><span></span></div>
+          <div class="openbtn1 mt-2 mt-lg-5"><span></span><span></span><span></span></div>
           <nav id="g-nav">
             <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
               <ul class="w-75 p-0">
@@ -57,7 +66,7 @@
             </div>
           </nav>
         </div>
-        <div id="toptext" class="col-12 text-center text-white">
+        <div id="toptext" class="col-12 text-center text-white d-none d-lg-block">
           <h2>
             滋賀県大津市伊香立に<br>
             キャンプ場・近江牛カフェスタンド・イベントスペース
@@ -70,9 +79,12 @@
     </div>
   </section>
 
-  <section class="row m-0 w-100 p-5" style="background-image: url(img/green.png);">
-    <div class="text-white col-8 mx-auto p-5">
-      <h3 class="mb-3">約3,000㎡の敷地をキャンプ場、イベントにもご利用いただけるスペースに。</h3>
+  <section class="row m-0 w-100 p-lg-5" style="background-image: url(img/green.png);">
+    <div class="text-white col-12 col-lg-8 mx-auto p-3 p-lg-5">
+      <h3 class="mb-3">約3,000㎡の敷地をキャンプ場、
+        <span class="d-block d-lg-none"></span>
+        イベントにもご利用いただけるスペースに。
+      </h3>
       <p>
         そんな自然豊かな場所に「THE PLACE K」をOPENいたしました。ゆったりとした敷地ではのんびりとキャンプをお楽しみいただけます。<br>
         また精肉店直営のキッチンカフェスタンド「BUTCHER'S」では、極上の近江牛を使ったお料理や各種お飲み物もご準備しております。（キャンプやお食事だけでなくイベントにもご利用いただけます）<br>
@@ -85,27 +97,33 @@
   <!-- メニュー -->
   <section>
     <div class="row m-0 w-100">
-      <a href="#1" class="col-2 text-center text-white p-5 bg-icon" style="background-image: url(img/b1.png);">
+      <a href="#1" class="col-6 col-lg-2 text-center text-white p-2 p-lg-5 bg-icon"
+        style="background-image: url(img/b1.png);">
         <img src="img/icon1.png" class="mb-2 mw-50">
         <h5 class="m-0 text-nav">キャンプ<br>(シバヒロ)</h5>
       </a>
-      <a href="#3" class="col-2 text-center text-white p-5 bg-icon" style="background-image: url(img/b2.png);">
+      <a href="#3" class="col-6 col-lg-2 text-center text-white p-2 p-lg-5 bg-icon"
+        style="background-image: url(img/b2.png);">
         <img src="img/icon2.png" class="mb-2 mw-50">
         <h5 class="m-0 text-nav">近江牛カフェスタンド<br>（BUTCHER'S）</h5>
       </a>
-      <a href="#5" class="col-2 text-center text-white p-5 bg-icon" style="background-image: url(img/b3.png);">
+      <a href="#5" class="col-6 col-lg-2 text-center text-white p-2 p-lg-5 bg-icon"
+        style="background-image: url(img/b3.png);">
         <img src="img/icon3.png" class="mb-2 mw-50">
         <h5 class="m-0 text-nav">イベント利用</h5>
       </a>
-      <a href="#2" class="col-2 text-center text-white p-5 bg-icon" style="background-image: url(img/b4.png);">
+      <a href="#2" class="col-6 col-lg-2 text-center text-white p-2 p-lg-5 bg-icon"
+        style="background-image: url(img/b4.png);">
         <img src="img/icon4.png" class="mb-2 mw-50">
         <h5 class="m-0 text-nav">施設案内</h5>
       </a>
-      <a href="#4" class="col-2 text-center text-white p-5 bg-icon" style="background-image: url(img/b5.png);">
+      <a href="#4" class="col-6 col-lg-2 text-center text-white p-2 p-lg-5 bg-icon"
+        style="background-image: url(img/b5.png);">
         <img src="img/icon5.png" class="mb-2 mw-50">
         <h5 class="m-0 text-nav">アクセス</h5>
       </a>
-      <a href="#6" class="col-2 text-center text-white p-5 bg-icon" style="background-image: url(img/b6.png);">
+      <a href="#6" class="col-6 col-lg-2 text-center text-white p-2 p-lg-5 bg-icon"
+        style="background-image: url(img/b6.png);">
         <img src="img/icon6.png" class="mb-2 mw-50">
         <h5 class="m-0 text-nav">ご利用時間と料金</h5>
       </a>
@@ -113,36 +131,46 @@
   </section>
 
   <!-- ニュース -->
-  <section class="px-5 pt-5">
+  <section class="px-3 px-lg-5 pt-3 pt-lg-5">
     <div class="row m-auto mw9">
       <div class="col-1" style="border-right: solid 1px black;">
         <p style="-ms-writing-mode: tb-rl;writing-mode: vertical-rl;">News</p>
       </div>
-      <div class="col-2 text-end">
+      <div class="col-2 text-end d-none d-lg-block">
         <p>2023.00.00</p>
         <p>2023.00.00</p>
         <p>2023.00.00</p>
       </div>
-      <div class="col-9">
+      <div class="col-9 d-none d-lg-block">
         <p>ニュースなど最新の更新情報が入ります。ニュースなど最新の更新情報が入ります。</p>
         <p>ニュースなど最新の更新情報が入ります。ニュースなど最新の更新情報が入ります。</p>
         <p>ニュースなど最新の更新情報が入ります。ニュースなど最新の更新情報が入ります。</p>
       </div>
-      <div class="col-12 py-5" style="border-bottom:solid 1px rgba(212, 212, 212, 0.978)"></div>
+
+      <div class="col-11 d-lg-none d-block">
+        <p>2023.00.00</p>
+        <p class="mb-2">ニュースなど最新の更新情報が入ります。ニュースなど最新の更新情報が入ります。</p>
+        <p>2023.00.00</p>
+        <p class="mb-2">ニュースなど最新の更新情報が入ります。ニュースなど最新の更新情報が入ります。</p>
+        <p>2023.00.00</p>
+        <p>ニュースなど最新の更新情報が入ります。ニュースなど最新の更新情報が入ります。</p>
+      </div>
+
+      <div class="col-12 py-2 py-lg-5" style="border-bottom:solid 1px rgba(212, 212, 212, 0.978)"></div>
     </div>
   </section>
 
   <!-- コンセプト -->
-  <section id="2" class="p-5 bg-consept">
+  <section id="2" class="p-0 p-lg-5 bg-consept">
     <div class="row m-auto mw9 wow animated fadeIn">
-      <div class="col-4 my-2" style="height: fit-content;">
+      <div class="col-8 col-lg-4 my-2 mx-auto pt-3 pt-lg-0" style="height: fit-content;">
         <img class="w-100" src="img/レイヤー 15.png">
       </div>
-      <div class="col-8 my-2 px-3" style="height: fit-content;">
-        <h1 class="mb-4 text-gold fs-326 ls-05">Concept</h1>
-        <h5 class="my-4 ls-03">COMFORTABLE HIDEAWAY</h5>
-        <h4 class="my-4  ls-05">心地いい隠れ家で。</h4>
-        <p class="my-4 lh-18 fs-96">
+      <div class="col-12 col-lg-8 my-2 px-3" style="height: fit-content;">
+        <h1 class="mb-4 text-gold fs-326 ls-05 text-center text-lg-start">Concept</h1>
+        <h5 class="my-2 my-lg-4 ls-03 text-sp text-center text-lg-start">COMFORTABLE HIDEAWAY</h5>
+        <h4 class="my-2 my-lg-4 ls-05 text-center text-lg-start text-sp2">心地いい隠れ家で。</h4>
+        <p class="my-2 my-lg-4 lh-18 fs-96">
           私達は近江牛の精肉店を1962年から約60年もの間、大津市堅田で営んでいます。その創業者で我々家族が慕っていた父は晩年、堅田に近いこの山の場所で過ごす事を愛し、近江牛を飼育していた牛小屋で趣味の骨董品の修理をしたり、春にはタケノコ堀り、夏には孫とカブトムシやクワガタを採ったりと、この山の恵みを家族と満喫していました。<br>
           THE PLACE、その場所は父や私達にとって心地のいい、隠れ家だったんです。<br>
           「THE PLACE
@@ -153,38 +181,38 @@
         <img class="my-5" src="img/デッキ.png">
       </div>
     </div>
-    <div class="row m-auto mw9 p-5 wow animated fadeIn">
-      <div class="col-1"></div>
-      <a href="pdf/ご利用時間と料金設定.pdf" target="_blank" class="col-4 m-auto text-center text-white p-1"
+    <div class="row m-auto mw9 py-3 px-0 p-lg-5 mb-4 mb-lg-0 wow animated fadeIn">
+      <div class="col-0 col-lg-1"></div>
+      <a href="pdf/ご利用時間と料金設定.pdf" target="_blank" class="col-5 col-lg-4 m-auto text-center text-white p-1"
         style="background-color: #445c94;">
-        <div class="p-2 center py-4" style="border: 1px solid #fff">
+        <div class="p-2 center py-3 py-lg-4" style="border: 1px solid #fff">
           <img style="width:10%" src="img/pdf.png">
-          <h3 class="d-inline m-0 px-2">ご利用時間・料金</h3>
+          <h3 class="d-inline m-0 px-2 text-sp">ご利用時間・料金</h3>
         </div>
       </a>
-      <div class="col-4 m-auto text-center text-white p-1" style="background-color: #445c94;">
-        <div class="p-2 center py-4" style="border: 1px solid #fff">
+      <div class="col-5 col-lg-4 m-auto text-center text-white p-1" style="background-color: #445c94;">
+        <div class="p-2 center py-3 py-lg-4" style="border: 1px solid #fff">
           <img style="width:10%" src="img/pdf.png">
-          <h3 class="d-inline m-0 px-2">施設の注意事項</h3>
+          <h3 class="d-inline m-0 px-2 text-sp">施設の注意事項</h3>
         </div>
       </div>
-      <div class="col-1"></div>
+      <div class="col-0 col-lg-1"></div>
     </div>
   </section>
 
   <!-- シバヒロ -->
-  <section id="1" class="p-5 mb-5 bg-section center" style="background-image:url(img/シバヒロ⑥.png);">
+  <section id="1" class="p-5 mb-0 mb-lg-5 bg-section center" style="background-image:url(img/シバヒロ⑥.png);">
     <img src="img/shiba.png">
   </section>
 
-  <section class="p-5 mt-3">
+  <section class="p-2 p-lg-5 mt-0 mt-lg-3">
     <div class="row m-auto mw9">
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
         <img class="w-100 pb-3 c1" src="img/丸デッキキャンプ のコピー.png">
-        <img class="w-100 c1" src="img/シバヒロ⑤夏.png">
+        <img class="w-100 c1 d-lg-block d-none" src="img/シバヒロ⑤夏.png">
       </div>
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
-        <h1 class="position-relative fs-326 ls-05" style="color:#b49d7c">
+      <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
+        <h1 class="position-relative fs-326 ls-05 text-center text-lg-start" style="color:#b49d7c">
           Camp<span class="ls-01 fs-50">キャンプ</span>
           <img class="position-absolute" style="width: 20%;bottom: 0%;right: 0%;" src="img/要予約 のコピー 2.png">
         </h1>
@@ -199,18 +227,21 @@
           <p class="m-0">　※注意事項などを記載できます。注意事項などを記載。</p>
         </div>
       </div>
-      <div class="col-12 text-center p-5 wow animated fadeIn">
+      <div class="col-12 text-center p-3 p-lg-5 wow animated fadeIn">
         <h3>ご利用の流れ</h3>
         <img class="flow my-2" src="img/ご利用の流れ.png">
-        <p class="">※車からキャンプ道具等をおろした後はTHE PLACE K駐車場に駐車願います。</p>
+        <p class="text-start text-lg-center">※車からキャンプ道具等をおろした後はTHE PLACE K駐車場に駐車願います。</p>
       </div>
-      <div class="col-6 mx-auto text-center text-white center wow animated fadeIn">
+      <div class="col-12 col-lg-6 mx-auto text-center text-white center wow animated fadeIn">
         <h3 class="p-3 w-100" style="background-color: #bdad96;border-radius: 5px;">→ご予約はこちらから</h3>
       </div>
 
-      <div class="col-12 my-5 pb-5" style="border-top:solid 1px rgba(212, 212, 212, 0.978)"></div>
+      <div class="col-12 my-4 my-lg-5 pb-lg-5" style="border-top:solid 1px rgba(212, 212, 212, 0.978)"></div>
 
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-12 my-2 d-lg-none d-block wow animated fadeIn" style="height: fit-content;">
+        <img class="w-100 c1" src="img/丸デッキキャンプ のコピー.png">
+      </div>
+      <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
         <h1 class="position-relative fs-326 ls-05" style="color:#b49d7c">
           BBQ<span class="ls-01 fs-50">バーベキュースペース</span>
           <img class="position-absolute" style="width: 20%;bottom: 0%;right: 0%;" src="img/要予約 のコピー 2.png">
@@ -221,15 +252,15 @@
           <p class="m-0">　※注意事項などを記載できます。注意事項などを記載。</p>
         </div>
       </div>
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-6 my-2 d-none d-lg-block wow animated fadeIn" style="height: fit-content;">
         <img class="w-100 c1" src="img/丸デッキキャンプ のコピー.png">
       </div>
-      <div class="col-12 text-center p-5 wow animated fadeIn">
+      <div class="col-12 text-center p-3 p-lg-5 wow animated fadeIn">
         <h3>ご利用の流れ</h3>
-        <img class="flow my-5" src="img/c-flow.png">
+        <img class="flow my-2" src="img/c-flow.png">
         <p class="">※注意事項など記載の必要なことを入れることができます。※注意事項など記載の必要なことを入れることができます。</p>
       </div>
-      <div class="col-6 mb-5 mx-auto text-center text-white center wow animated fadeIn">
+      <div class="col-12 col-lg-6 mb-5 mx-auto text-center text-white center wow animated fadeIn">
         <h3 class="p-3 w-100" style="background-color: #bdad96;border-radius: 5px;">→ご予約はこちらから</h3>
       </div>
     </div>
@@ -240,16 +271,16 @@
     <img src="img/butcher.png">
   </section>
 
-  <section class="p-5 mt-5">
+  <section class="p-2 p-lg-5 mt-0 mt-lg-5">
     <div class="row m-auto text-center mw9 wow animated fadeIn">
       <div class="col-12 my-3 mx-auto">
         <h1 style="color:#b49d7c">Omi-Beef Kitchen＆Cafe Stand</h1>
       </div>
-      <div class="col-12 my-3 mx-auto">
+      <div class="col-12 my-0 my-lg-3 mx-auto">
         <h1 style="color:#b49d7c">近江牛カフェスタンド BUTCHER'S</h1>
       </div>
       <div class="col-12 my-3 mx-auto">
-        <p class="ls-01p">
+        <p class="ls-01p text-start text-lg-center">
           THE PLACE K内には近江牛認証精肉店直営の近江牛カフェスタンド BUTCHER'Sがございます。<br>
           キャンプ利用されない方もご家族、ご友人や仲間の方と一緒にカフェとして敷地内のどこでもご利用頂けるカフェスタンドです。<br>
           お一人様でカフェ、ワ―ケーションスペースとしてご利用頂く事も。<br>
@@ -262,16 +293,18 @@
     </div>
   </section>
 
-  <section class="p-5">
-    <div class="row m-auto p-5 mw9 wow animated fadeIn" style="background-color:#fff5e6">
+  <section class="p-2 p-lg-5">
+    <div class="row m-auto p-1 p-lg-5 mw9 wow animated fadeIn" style="background-color:#fff5e6">
       <div class="col-6 my-2" style="height: fit-content;">
         <h1 class="position-relative" style="color:#b49d7c">
           KIDs MENU
         </h1>
-        <p> 料理メニューについての紹介などが入ります。<br>
+        <p class="d-none d-lg-block"> 料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
+        </p>
+        <p class="d-lg-none d-block"> 料理メニューについての紹介などが入ります。
         </p>
         <h3>0,000円（税込み）</h3>
       </div>
@@ -280,51 +313,59 @@
       </div>
     </div>
 
-    <div class="row m-auto p-5 mw9">
-      <div class="col-5 mx-auto mb-5 wow animated fadeIn" style="height: fit-content;">
+    <div class="row m-auto p-2 p-lg-5 mw9">
+      <div class="col-6 col-lg-5 mx-auto mb-3 mb-lg-5 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3" src="img/3530331_m.png">
         <h5>料理名など写真のタイトル</h5>
-        <p> 料理メニューについての紹介などが入ります。<br>
+        <p class="d-none d-lg-block"> 料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
         </p>
+        <p class="d-lg-none d-block"> 料理メニューについての紹介などが入ります。
+        </p>
         <h5 class="text-end">0,000円（税込み）</h5>
       </div>
-      <div class="col-5 mx-auto mb-5 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-6 col-lg-5 mx-auto mb-3 mb-lg-5 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3" src="img/3530331_m.png">
         <h5>料理名など写真のタイトル</h5>
-        <p> 料理メニューについての紹介などが入ります。<br>
+        <p class="d-none d-lg-block"> 料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
         </p>
+        <p class="d-lg-none d-block"> 料理メニューについての紹介などが入ります。
+        </p>
         <h5 class="text-end">0,000円（税込み）</h5>
       </div>
-      <div class="col-5 mx-auto mb-5 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-6 col-lg-5 mx-auto mb-3 mb-lg-5 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3" src="img/3530331_m.png">
         <h5>料理名など写真のタイトル</h5>
-        <p> 料理メニューについての紹介などが入ります。<br>
+        <p class="d-none d-lg-block"> 料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
         </p>
+        <p class="d-lg-none d-block"> 料理メニューについての紹介などが入ります。
+        </p>
         <h5 class="text-end">0,000円（税込み）</h5>
       </div>
-      <div class="col-5 mx-auto mb-5 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-6 col-lg-5 mx-auto mb-3 mb-lg-5 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3" src="img/3530331_m.png">
         <h5>料理名など写真のタイトル</h5>
-        <p> 料理メニューについての紹介などが入ります。<br>
+        <p class="d-none d-lg-block"> 料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
           料理メニューについての紹介などが入ります。<br>
+        </p>
+        <p class="d-lg-none d-block"> 料理メニューについての紹介などが入ります。
         </p>
         <h5 class="text-end">0,000円（税込み）</h5>
       </div>
     </div>
-    <div class="row m-auto p-5 mw9 wow animated fadeIn">
+    <div class="row m-auto p-0 p-lg-5 mb-3 mb-lg-0 mw9 wow animated fadeIn">
       <div class="col-12 text-center">
-        <h3>近江牛カフェスタンド（BUTCHER'S）利用の流れ</h3>
+        <h3 class="fs-1r">近江牛カフェスタンド（BUTCHER'S）利用の流れ</h3>
         <img class="flow my-2" src="img/b-flow.png">
         <p class="">※キャンプサイト区画外であればシバヒロの芝生でも自由にお食事やお飲み物をお楽しみ頂けます。</p>
       </div>
@@ -336,8 +377,8 @@
     <img src="img/e-back.png">
   </section>
 
-  <section class="p-5 mt-5">
-    <div class="row m-auto text-center mw9">
+  <section class="p-2 p-lg-5 mt-0 mt-lg-5">
+    <div class="row m-auto  text-start text-lg-center mw9">
       <div class="col-12 my-3 mx-auto position-relative wow animated fadeIn">
         <img class="position-absolute" style="width: 10%;top: -15%;right: 0%;" src="img/要予約 のコピー 2.png">
         <p>THE PLACE Kの“シバヒロ”、建屋イートインスペース（建屋内とデッキ）と<br>
@@ -348,7 +389,7 @@
           （イベントに必要な音楽系機材、マイクやスピーカー、プロジェクターなど当方でご用意できる機材は貸出し料金に含まれています。）<br><br>
           皆様の晴れの舞台、集まりをしっかりと応援させて頂きます。</p>
       </div>
-      <div class="col-12 text-center p-5 wow animated fadeIn">
+      <div class="col-12 text-center p-3 p-lg-5 wow animated fadeIn">
         <h3>イベント利用の流れ</h3>
         <img class="flow my-2" src="img/e-flow.png">
       </div>
@@ -360,21 +401,21 @@
     <img src="img/グループ 4.png">
   </section>
 
-  <section class="p-5 my-5">
+  <section class="p-2 p-lg-5 my-0 my-lg-5">
     <div class="row m-auto mw9">
       <div class="col-12 my-3 mx-auto position-relative wow animated fadeIn">
         <h1 style="color:#b49d7c">OUTDOORリビングスペース　BBQ、パーティー利用</h1>
         <img class="position-absolute" style="width: 10%;top: -75%;right: 0%;" src="img/要予約 のコピー 2.png">
       </div>
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-6 my-2 d-none d-lg-block wow animated fadeIn" style="height: fit-content;">
         <img class="w-100" src="img/丸デッキキャンプ のコピー.png">
       </div>
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
         <p>THE PLACE K敷地内にはOUTDOOR LIVINGスペースとして冷暖房完備のコンテナ＆芝生庭スペースを3棟、設けております。<br>
           庭の前にはFIRE　PIT（大きな焚火スペース）もあり、近江牛カフェスタンドのBUTCHER'Sでご用意させて頂くBBQメニューやご相談に応じ、パーティーメニューをご用意させて頂きます。（事前予約制）<br>
           隠れ家にあるリビング前の庭、特別な空間でご家族やご友人の皆さまと特別な時間を過ごして頂けます。
         </p>
-        <div class="py-4 px-3" style="background-color: #eee7dd;">
+        <div class="py-4 px-3 mt-3 mt-lg-0" style="background-color: #eee7dd;">
           <h5>【料金】0時間 0,000円（税込み）～</h5>
           <p class="m-0">　※注意事項などを記載できます。注意事項などを記載。</p>
         </div>
@@ -385,47 +426,47 @@
   <!-- カルーセル -->
   <section class="" style="background-color: #ececec;">
     <ul class="slide-items p-0">
-      <li style="background-image:url(img/デッキ紅葉夏.png) ;width: 100%;height: 25vw;"></li>
+      <li><img src="img/デッキ紅葉夏.png" alt=""></li>
       <li><img src="img/デッキ紅葉.png" alt=""></li>
       <li><img src="img/建屋内キャンプイベント受付カウンター前.png" alt=""></li>
     </ul>
   </section>
 
   <!-- サービス -->
-  <section class="p-5">
-    <div class="row m-auto p-5 mw9">
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 225px;" src="img/4571497_m.png">
+  <section class="p-0 p-lg-5">
+    <div class="row m-auto p-3 p-lg-5 mw9">
+      <div class="col-6 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-225" src="img/4571497_m.png">
         <h3 class="text-center" style="color:#b49d7c">サウナ</h3>
         <p> サウナについての紹介などが入ります。サウナについての紹介などが入ります。サウナについての紹介などが入ります。サウナについての紹介などが入ります。
         </p>
       </div>
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 225px;" src="img/25454096_m.png">
+      <div class="col-6 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-225" src="img/25454096_m.png">
         <h3 class="text-center" style="color:#b49d7c">シャワー</h3>
         <p> シャワーについての紹介などが入ります。シャワーについての紹介などが入ります。シャワーについての紹介などが入ります。シャワーについての紹介などが入ります。
         </p>
       </div>
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 225px;" src="img/24735212_m.png">
+      <div class="col-6 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-225" src="img/24735212_m.png">
         <h3 class="text-center" style="color:#b49d7c">トイレ</h3>
         <p> トイレについての紹介などが入ります。トイレについての紹介などが入ります。トイレについての紹介などが入ります。トイレについての紹介などが入ります。
         </p>
       </div>
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 225px;" src="img/25106175_m.png">
+      <div class="col-6 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-225" src="img/25106175_m.png">
         <h3 class="text-center" style="color:#b49d7c">wifi完備</h3>
         <p> wifiについての紹介などが入ります。wifiについての紹介などが入ります。wifiについての紹介などが入ります。wifiについての紹介などが入ります。
         </p>
       </div>
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 225px;" src="img/25184411_m.png">
+      <div class="col-6 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-225" src="img/25184411_m.png">
         <h3 class="text-center" style="color:#b49d7c">ファイヤーピット</h3>
         <p> ファイヤーピットについての紹介などが入ります。ファイヤーピットについての紹介などが入ります。ファイヤーピットについての紹介などが入ります。
         </p>
       </div>
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 225px;" src="img/25368474_m.png">
+      <div class="col-6 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-225" src="img/25368474_m.png">
         <h3 class="text-center" style="color:#b49d7c">施設内物販</h3>
         <h6 class="text-center" style="color:#b49d7c">（マッチ・薪など）</h6>
         <p> 施設物販についての紹介などが入ります。施設物販についての紹介などが入ります。施設物販についての紹介などが入ります。
@@ -436,14 +477,14 @@
 
   <!-- アクセス -->
   <section id="4" class="px-5">
-    <div class="row m-auto mb-5 mw9">
-      <div class="col-12 mb-5" style="border-bottom:solid 1px rgba(212, 212, 212, 0.978)"></div>
+    <div class="row m-auto mb-0 mb-lg-5 mw9">
+      <div class="col-12 mb-0 mb-lg-5" style="border-bottom:solid 1px rgba(212, 212, 212, 0.978)"></div>
     </div>
   </section>
 
-  <section class="px-5">
+  <section class="px-3 px-lg-5">
     <div class="row m-auto mw9 wow animated fadeIn">
-      <div class="col-6 my-5 position-relative">
+      <div class="col-12 col-lg-6 my-3 my-lg-5 position-relative text-center text-lg-start">
         <h1>Access</h1>
         <p>〒520-0354 滋賀県大津市伊香立南庄町2369</p>
         <h4 class="my-5">ルートマップ</h4>
@@ -454,7 +495,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <div class="col-6 my-5">
+      <div class="col-12 col-lg-6 my-2 my-lg-5">
         <img src="img/car.png">
         <img src="img/24966382_m.png">
       </div>
@@ -463,27 +504,28 @@
 
 
   <!-- insta -->
-  <section class="p-5 mt-5" style="background:#fff5e6">
+  <section class="p-3 p-lg-5 mt-5" style="background:#fff5e6">
     <div class="row m-auto mw9 wow animated fadeIn">
       <div class="col-12 my-3 mx-auto text-center position-relative">
         <h1 style="color:#b49d7c">Instagram</h1>
-        <p>THE PLACE Kの日々の事を更新中。お気軽にフォローください。</p>
+        <p>THE PLACE Kの日々の事を更新中。<span class="d-block d-lg-none"></span>お気軽にフォローください。</p>
       </div>
       <div class="col-12 my-3 mx-auto text-center position-relative wow animated fadeIn">
-        <img src="img/insta.png">
+        <img class="d-none d-lg-block" src="img/insta.png">
+        <img class="d-lg-none d-block" src="img/instasp.png">
       </div>
     </div>
   </section>
 
 
   <!-- 周辺施設 -->
-  <section class="p-5">
+  <section class="p-3 p-lg-5">
     <div class="row m-auto mw9">
       <div class="col-12 my-3 mx-auto text-center position-relative wow animated fadeIn">
         <h1 style="color:#b49d7c">周辺施設のご案内</h1>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/白髭神社写真.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/白髭神社写真.jpg">
         <p><span style="font-weight:bold">観光①　[歴史]</span><br>
           浮御堂　車で15分<br>
           白髭神社　車で37分<br>
@@ -492,8 +534,8 @@
           比叡山延暦寺　車で21分
         </p>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/マキノメタセコイア並木.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/マキノメタセコイア並木.jpg">
         <p><span style="font-weight:bold">観光②　[レジャー]</span><br>
           琵琶湖汽船 ミシガンクルーズ（大津港）車で30分<br>
           びわ湖テラス　車で37分<br>
@@ -502,16 +544,16 @@
           海津大崎　1時間10分
         </p>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/温泉写真.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/温泉写真.jpg">
         <p><span style="font-weight:bold">公衆浴場・温泉施設</span><br>
           スパリゾート雄琴 あがりゃんせ　車で16分<br>
           守山湯元 水春　車で22分<br>
           天然温泉 比良とぴあ　車で26分
         </p>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/スーパー写真.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/スーパー写真.jpg">
         <p><span style="font-weight:bold">スーパーマーケット</span><br>
           フレスコ 仰木の里店　車で8分<br>
           フレンドマート 雄琴駅前店　車で10分<br>
@@ -520,31 +562,31 @@
           道の駅 びわ湖大橋米プラザ　車で17分
         </p>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/ドラッグストア.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/ドラッグストア.jpg">
         <p><span style="font-weight:bold">ドラッグストア</span><br>
           クスリのアオキ 堅田店　車で10分<br>
           サンドラッグ 雄琴店　車で14分<br>
           スギ薬局 おごと温泉駅前店　車で10分
         </p>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/コンビニ写真.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/コンビニ写真.jpg">
         <p><span style="font-weight:bold">コンビニ</span><br>
           Lawson 大津仰木の里東店　車で10分<br>
           Family Mart 大津雄琴駅前店　車で12分<br>
           Seven Eleven 大津仰木の里店　車で10分
         </p>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/ホームセンター.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/ホームセンター.jpg">
         <p><span style="font-weight:bold">ホームセンター</span><br>
           コメリホームセンター 堅田店　車で16分<br>
           アヤハディオ 堅田店　車で13分
         </p>
       </div>
-      <div class="col-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
-        <img class="mb-3" style="height: 160px;" src="img/キャンプ用品.jpg">
+      <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
+        <img class="mb-3 h-160" src="img/キャンプ用品.jpg">
         <p><span style="font-weight:bold">キャンプ用品販売店</span><br>
           Camp Depo 大津堅田店　車で11分<br>
         </p>
@@ -554,7 +596,7 @@
 
 
   <!-- お問い合わせ -->
-  <section class="p-5" style="background-color: #b49d7c;">
+  <section class="p-3 p-lg-5" style="background-color: #b49d7c;">
     <div class="row m-auto mw9">
       <div class="col-12 my-3 mx-auto text-center text-white wow animated fadeIn">
         <h1>Contacts</h1>
@@ -566,32 +608,32 @@
       <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
         <img class="w-100" src="img/line.png">
       </div>
-      <div class="col-12 py-5 wow animated fadeIn">
-        <div class="bg-white row m-auto px-5">
+      <div class="col-12 py-3 py-lg-5 wow animated fadeIn">
+        <div class="bg-white row m-auto px-3 px-lg-5">
           <div class="col-12 my-5 mx-auto text-center ">
             <h3 style="color:#b49d7c;">お問い合わせフォーム</h3>
           </div>
-          <div class="col-2 my-2">
+          <div class="col-12 col-lg-2 my-2">
             <p>お名前</p>
           </div>
-          <div class="col-10 my-2" style="border:solid 1px #b49d7c">
+          <div class="col-12 col-lg-10 my-2 h-8vw" style="border:solid 1px #b49d7c">
           </div>
-          <div class="col-2 my-2">
+          <div class="col-12 col-lg-2 my-2">
             <p>電話番号</p>
           </div>
-          <div class="col-10 my-2" style="border:solid 1px #b49d7c">
+          <div class="col-12 col-lg-10 my-2 h-8vw" style="border:solid 1px #b49d7c">
           </div>
-          <div class="col-2 my-2">
+          <div class="col-12 col-lg-2 my-2">
             <p>メール</p>
           </div>
-          <div class="col-10 my-2" style="border:solid 1px #b49d7c">
+          <div class="col-12 col-lg-10 my-2 h-8vw" style="border:solid 1px #b49d7c">
           </div>
-          <div class="col-2 my-2">
+          <div class="col-12 col-lg-2 my-2">
             <p>お問い合わせ内容</p>
           </div>
-          <div class="col-10 my-2" style="border:solid 1px #b49d7c;height: 15vw;">
+          <div class="col-12 col-lg-10 my-2 h-15vw" style="border:solid 1px #b49d7c;">
           </div>
-          <div class="col-2 mx-auto my-5 text-center text-white">
+          <div class="col-12 col-lg-2 mx-auto my-3 my-lg-5 px-0 text-center text-white">
             <h5 class="p-3" style="background-color: #bdad96;">送信する</h5>
           </div>
         </div>
@@ -600,19 +642,19 @@
   </section>
 
   <!-- フット -->
-  <section class="p-5">
-    <div class="row m-auto pt-5 mw9">
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+  <section class="p-3 p-lg-5">
+    <div class="row m-auto pt-lg-5 mw9">
+      <div class="col-12 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
         <a href="#" target="_blank" class="mb-3 bg-dark">
           <img src="img/ban3.png">
         </a>
       </div>
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-12 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
         <a href="https://ma-nakagawa.sakura.ne.jp/jiro/index.html" target="_blank" class="mb-3 bg-dark">
           <img src="img/ban1.png">
         </a>
       </div>
-      <div class="col-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-12 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
         <a href="https://www.ohmigyu-tarouya.com" target="_blank" class="mb-3 bg-dark">
           <img src="img/ban2.png">
         </a>
@@ -663,7 +705,7 @@
   <script>
     jQuery(function ($) {
       $(window).on('scroll', function () {
-        if ($(window).scrollTop() < 500) {
+        if ($(window).scrollTop() < 10) {
           $('#toptext').fadeIn(400);
         } else {
           $('#toptext').fadeOut(400);
