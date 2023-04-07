@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'Harenosora';
+  src:url('fonts/Harenosora.otf') format('opentype');
+}
+html{
+    font-family: 'Harenosora';
+}
+
+img{
+  width:100%
+}
+
+h1, h2,h3,h4,h5,h6,p,a{
+  font-family: 'Harenosora';
+}
+
+p{
+  line-height: 2;
+}
+
+a{
+  text-decoration:none !important;
+  color: black !important;
+}
+
+.text-gold{
+  color:#b49d7c
+}
+
+.text-nav{
+  font-family: none;
+  font-weight: bold;
+}
+
+.fs-50{
+  font-size: 50%;
+}
+
+.fs-96{
+  font-size: 96%;
+}
+
+.fs-121{
+  font-size: 121%;
+}
+
+.fs-410{
+  font-size: 410%;
+}
+
+.fs-326{
+  font-size: 326%;
+}
+
+.ls-01p{
+  letter-spacing: -1px;
+}
+
+.ls-01{
+  letter-spacing: 0.1rem;
+}
+
+.ls-03{
+  letter-spacing: 0.3rem;
+}
+
+.ls-05{
+  letter-spacing: 0.5rem;
+}
+
+.lh-18{
+  line-height: 1.8;
+}
+
+.mw-50{
+  max-width: 50%;
+}
+
+.mw-1080p{
+  max-width: 1080px;
+}
+
+.mw9{
+    max-width: 1140px;
+}
+
+.h-225{
+  height: 225px;
+}
+
+.h-160{
+  height: 160px;
+}
+
+.h-15vw{
+  height: 15vw;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-mv{
+  background-image: url(img/PLACEK施設全体図.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.bg-icon{
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all .3s;
+  transition: all 1s;
+}
+
+.bg-icon:hover {
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.bg-section{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 37vw;
+  max-height: 535px;
+}
+
+.bg-consept{
+  background-image:url(img/ベクトルスマートオブジェクト.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-section img{
+    width:43%;
+    max-width: 576px;
+}
+
+.slide-items {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-items img {
+  width: 100%;
+  object-fit: cover;
+  height: 25vw;
+}
+
+.box-shadow {
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 50%);
+}
+
+.btn-top{
+  background:#933234;
+  height: fit-content;
+  max-width: 200px;
+}
+
+.flow{
+  width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+
+.c1 {
+  height: 33vh;
+  object-fit: cover;
+  max-height: 297px;
+}
+
+iframe {
+    height: 27vw;
+}
+
+.if{
+  position: absolute;
+  bottom: -6px;
+  width: 90%;
+}
+
+
+
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+  top:0;
+    right: -120%;
+  width: 20%;
+    height: 100vh;/*ナビの高さ*/
+  background:#923234;
+    /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 20%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a{
+  color: #fff !important;
+  text-decoration: none;
+  padding:10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.bb-white{
+  border-bottom: solid 1px white;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+  position:absolute;
+  z-index: 9999;/*ボタンを最前面に*/
+  top:0%;
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  background: #933234;
+}
+
+/*×に変化*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background-color: #fff;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.page_top_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  padding: 0.7em;
+  text-align: center;
+  background: rgb(147 50 52);
+  color: #fff !important;
+  transition: 0.3s;
+  z-index: 999;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
