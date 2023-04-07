@@ -22,22 +22,25 @@
 </head>
 
 <body>
+  <a href="#" id="page_top" class="page_top_btn">▲</a>
   <section class="bg-mv position-relative">
     <div class="px-1 px-lg-5 position-fixed w-100" style="background:#00000048;z-index: 99999">
       <div class="row m-auto">
         <div class="col-0 col-xl-2"></div>
-        <div class="col-2 col-lg-1">
-          <img class="w-100 my-3" src="img/レイヤー 1.png">
+        <div class="col-2 col-lg-1 p-0">
+          <img class="w-100 my-2" src="img/レイヤー 1.png">
         </div>
         <div class="col-8 col-xl-3 p-0">
-          <div class="col-12 py-2 text-center text-white d-lg-none d-block">
-            <p>
-              滋賀県大津市伊香立に
-              キャンプ場・<br>近江牛カフェスタンド・イベントスペース
-            </p>
-            <p style="font-weight: bold;">
-              <span style="font-family: none;">「THE PLACE K」</span>がいよいよオープン！
-            </p>
+          <div class="col-12 py-2 ps-1 text-center text-white d-lg-none d-block">
+            <div id="toptext-sp" style="white-space: nowrap;">
+              <p>
+                滋賀県大津市伊香立に
+                キャンプ場・<br>近江牛カフェスタンド・イベントスペース
+              </p>
+              <p style="font-weight: bold;">
+                <span style="font-family: none;">「THE PLACE K」</span>がいよいよオープン！
+              </p>
+            </div>
           </div>
         </div>
         <div class="col-2 px-2 d-none d-lg-block">
@@ -66,14 +69,16 @@
             </div>
           </nav>
         </div>
-        <div id="toptext" class="col-12 text-center text-white d-none d-lg-block">
-          <h2>
-            滋賀県大津市伊香立に<br>
-            キャンプ場・近江牛カフェスタンド・イベントスペース
-          </h2>
-          <h2 class="pb-3" style="font-weight: bold; font-size:2rem">
-            <span style="font-family: none;">「THE PLACE K」</span>がいよいよオープン！
-          </h2>
+        <div class="col-12 text-center text-white d-none d-lg-block">
+          <div id="toptext">
+            <h2>
+              滋賀県大津市伊香立に<br>
+              キャンプ場・近江牛カフェスタンド・イベントスペース
+            </h2>
+            <h2 class="pb-3" style="font-weight: bold; font-size:2rem">
+              <span style="font-family: none;">「THE PLACE K」</span>がいよいよオープン！
+            </h2>
+          </div>
         </div>
       </div>
     </div>
@@ -81,15 +86,13 @@
 
   <section class="row m-0 w-100 p-lg-5" style="background-image: url(img/green.png);">
     <div class="text-white col-12 col-lg-8 mx-auto p-3 p-lg-5">
-      <h3 class="mb-3">約3,000㎡の敷地をキャンプ場、
-        <span class="d-block d-lg-none"></span>
-        イベントにもご利用いただけるスペースに。
+      <h3 class="mb-3">約3,000㎡の敷地をキャンプ場、<br class="d-lg-none">イベントにもご利用いただけるスペースに。
       </h3>
       <p>
         そんな自然豊かな場所に「THE PLACE K」をOPENいたしました。ゆったりとした敷地ではのんびりとキャンプをお楽しみいただけます。<br>
         また精肉店直営のキッチンカフェスタンド「BUTCHER'S」では、極上の近江牛を使ったお料理や各種お飲み物もご準備しております。（キャンプやお食事だけでなくイベントにもご利用いただけます）<br>
         「THE PLACE K」が皆様にも心地いい隠れ家になることを願って…。<br>
-        是非お気軽に「THE PLACE K」に遊びに来てください
+        是非お気軽に「THE PLACE K」に遊びに来てください。
       </p>
     </div>
   </section>
@@ -163,13 +166,16 @@
   <!-- コンセプト -->
   <section id="2" class="p-0 p-lg-5 bg-consept">
     <div class="row m-auto mw9 wow animated fadeIn">
-      <div class="col-8 col-lg-4 my-2 mx-auto pt-3 pt-lg-0" style="height: fit-content;">
+      <div class="col-8 col-lg-4 my-2 mx-auto pt-3 pt-lg-0 d-none d-lg-block" style="height: fit-content;">
         <img class="w-100" src="img/レイヤー 15.png">
       </div>
       <div class="col-12 col-lg-8 my-2 px-3" style="height: fit-content;">
         <h1 class="mb-4 text-gold fs-326 ls-05 text-center text-lg-start">Concept</h1>
         <h5 class="my-2 my-lg-4 ls-03 text-sp text-center text-lg-start">COMFORTABLE HIDEAWAY</h5>
         <h4 class="my-2 my-lg-4 ls-05 text-center text-lg-start text-sp2">心地いい隠れ家で。</h4>
+        <div class="col-8 col-lg-4 my-2 mx-auto pt-3 pt-lg-0 d-lg-none d-block mb-3" style="height: fit-content;">
+          <img class="w-100" src="img/レイヤー 15.png">
+        </div>
         <p class="my-2 my-lg-4 lh-18 fs-96">
           私達は近江牛の精肉店を1962年から約60年もの間、大津市堅田で営んでいます。その創業者で我々家族が慕っていた父は晩年、堅田に近いこの山の場所で過ごす事を愛し、近江牛を飼育していた牛小屋で趣味の骨董品の修理をしたり、春にはタケノコ堀り、夏には孫とカブトムシやクワガタを採ったりと、この山の恵みを家族と満喫していました。<br>
           THE PLACE、その場所は父や私達にとって心地のいい、隠れ家だったんです。<br>
@@ -178,7 +184,8 @@
         </p>
       </div>
       <div id="6" class="col-12 mt-5 wow animated fadeIn">
-        <img class="my-5" src="img/デッキ.png">
+        <img class="my-5 d-none d-lg-block" src="img/デッキ.png">
+        <img class="my-5 d-lg-none" src="img/dekk_sp.png">
       </div>
     </div>
     <div class="row m-auto mw9 py-3 px-0 p-lg-5 mb-4 mb-lg-0 wow animated fadeIn">
@@ -187,7 +194,7 @@
         style="background-color: #445c94;">
         <div class="p-2 center py-3 py-lg-4" style="border: 1px solid #fff">
           <img style="width:10%" src="img/pdf.png">
-          <h3 class="d-inline m-0 px-2 text-sp">ご利用時間・料金</h3>
+          <h3 class="d-inline m-0 px-1 px-lg-2 text-sp">ご利用時間・料金</h3>
         </div>
       </a>
       <div class="col-5 col-lg-4 m-auto text-center text-white p-1" style="background-color: #445c94;">
@@ -208,11 +215,15 @@
   <section class="p-2 p-lg-5 mt-0 mt-lg-3">
     <div class="row m-auto mw9">
       <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
+        <h1 class="position-relative fs-326 ls-05 text-center text-lg-start d-lg-none" style="color:#b49d7c">
+          Camp<span class="ls-01 fs-50">キャンプ</span>
+          <img class="position-absolute" style="width: 20%;bottom: 0%;right: 0%;" src="img/要予約 のコピー 2.png">
+        </h1>
         <img class="w-100 pb-3 c1" src="img/丸デッキキャンプ のコピー.png">
         <img class="w-100 c1 d-lg-block d-none" src="img/シバヒロ⑤夏.png">
       </div>
       <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
-        <h1 class="position-relative fs-326 ls-05 text-center text-lg-start" style="color:#b49d7c">
+        <h1 class="position-relative fs-326 ls-05 text-center text-lg-start d-none d-lg-block" style="color:#b49d7c">
           Camp<span class="ls-01 fs-50">キャンプ</span>
           <img class="position-absolute" style="width: 20%;bottom: 0%;right: 0%;" src="img/要予約 のコピー 2.png">
         </h1>
@@ -222,14 +233,15 @@
           自然に囲まれた隠れ家THE PLACE
           Kですが、車で10分圏内の近隣にスーパー、ドラッグストア、コンビニ等が多くあり、公衆浴場、スーパー銭湯などもアクセス良く、キャンプ初心者の方々から、ベテランキャンパーまで非常に便利にキャンプを楽しんで頂ける立地です。<br>
           是非ともご家族、仲間で、またお一人様キャンプも大歓迎、移動や準備に時間をかけずに気軽にキャンプを楽しみにお越しください。</p>
-        <div class="py-4 px-3 mt-4" style="background-color: #eee7dd;">
+        <div class="py-4 px-2 px-lg-3 mt-4" style="background-color: #eee7dd;">
           <h3>【料金】0時間 0,000円（税込み）～</h3>
           <p class="m-0">　※注意事項などを記載できます。注意事項などを記載。</p>
         </div>
       </div>
       <div class="col-12 text-center p-3 p-lg-5 wow animated fadeIn">
         <h3>ご利用の流れ</h3>
-        <img class="flow my-2" src="img/ご利用の流れ.png">
+        <img class="flow my-2 d-none d-lg-block" src="img/ご利用の流れ.png">
+        <img class="flow my-2 d-lg-none" src="img/f1_sp.png">
         <p class="text-start text-lg-center">※車からキャンプ道具等をおろした後はTHE PLACE K駐車場に駐車願います。</p>
       </div>
       <div class="col-12 col-lg-6 mx-auto text-center text-white center wow animated fadeIn">
@@ -239,15 +251,19 @@
       <div class="col-12 my-4 my-lg-5 pb-lg-5" style="border-top:solid 1px rgba(212, 212, 212, 0.978)"></div>
 
       <div class="col-12 my-2 d-lg-none d-block wow animated fadeIn" style="height: fit-content;">
+        <h1 class="position-relative fs-326 ls-05 d-lg-none" style="color:#b49d7c">
+          BBQ<span class="ls-01 fs-50">バーベキュースペース</span>
+          <img class="position-absolute" style="width: 20%;bottom: 0%;right: 0%;" src="img/要予約 のコピー 2.png">
+        </h1>
         <img class="w-100 c1" src="img/丸デッキキャンプ のコピー.png">
       </div>
       <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
-        <h1 class="position-relative fs-326 ls-05" style="color:#b49d7c">
+        <h1 class="position-relative fs-326 ls-05 d-none d-lg-block" style="color:#b49d7c">
           BBQ<span class="ls-01 fs-50">バーベキュースペース</span>
           <img class="position-absolute" style="width: 20%;bottom: 0%;right: 0%;" src="img/要予約 のコピー 2.png">
         </h1>
         <p>BBQについての説明文がはいります。BBQについての説明文がはいります。BBQについての説明文がはいります。BBQについての説明文がはいります。</p>
-        <div class="py-4 px-3 mt-4" style="background-color: #eee7dd;">
+        <div class="py-4 px-2 px-lg-3 mt-4" style="background-color: #eee7dd;">
           <h3>【料金】0時間 0,000円（税込み）～</h3>
           <p class="m-0">　※注意事項などを記載できます。注意事項などを記載。</p>
         </div>
@@ -293,8 +309,8 @@
     </div>
   </section>
 
-  <section class="p-2 p-lg-5">
-    <div class="row m-auto p-1 p-lg-5 mw9 wow animated fadeIn" style="background-color:#fff5e6">
+  <section class="p-3 p-lg-5">
+    <div class="row m-auto p-1 p-lg-5 mb-3 mb-lg-0 mw9 wow animated fadeIn" style="background-color:#fff5e6">
       <div class="col-6 my-2" style="height: fit-content;">
         <h1 class="position-relative" style="color:#b49d7c">
           KIDs MENU
@@ -313,7 +329,7 @@
       </div>
     </div>
 
-    <div class="row m-auto p-2 p-lg-5 mw9">
+    <div class="row m-auto p-2 px-0 p-lg-5 mw9">
       <div class="col-6 col-lg-5 mx-auto mb-3 mb-lg-5 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3" src="img/3530331_m.png">
         <h5>料理名など写真のタイトル</h5>
@@ -365,28 +381,30 @@
     </div>
     <div class="row m-auto p-0 p-lg-5 mb-3 mb-lg-0 mw9 wow animated fadeIn">
       <div class="col-12 text-center">
-        <h3 class="fs-1r">近江牛カフェスタンド（BUTCHER'S）利用の流れ</h3>
-        <img class="flow my-2" src="img/b-flow.png">
-        <p class="">※キャンプサイト区画外であればシバヒロの芝生でも自由にお食事やお飲み物をお楽しみ頂けます。</p>
+        <h3 class="fs-1r">近江牛カフェスタンド（BUTCHER'S）<br class="d-lg-none">利用の流れ</h3>
+        <img class="flow my-2 d-none d-lg-block" src="img/b-flow.png">
+        <img class="flow my-2 d-lg-none" src="img/f1_sp.png">
+        <p class="text-start text-lg-center">※キャンプサイト区画外であればシバヒロの芝生でも自由にお食事やお飲み物をお楽しみ頂けます。</p>
       </div>
     </div>
   </section>
 
   <!-- イベント利用 -->
-  <section id="5" class="p-5 bg-section center" style="background-image:url(img/25386055_s.png);">
+  <section id="5" class="p-5 bg-section center e-back_sp" style="background-image:url(img/25386055_s.png);">
     <img src="img/e-back.png">
   </section>
 
   <section class="p-2 p-lg-5 mt-0 mt-lg-5">
     <div class="row m-auto  text-start text-lg-center mw9">
       <div class="col-12 my-3 mx-auto position-relative wow animated fadeIn">
-        <img class="position-absolute" style="width: 10%;top: -15%;right: 0%;" src="img/要予約 のコピー 2.png">
+        <img class="position-absolute sp-w20 sp-top-30" style="width: 10%;top: -15%;right: 0%;"
+          src="img/要予約 のコピー 2.png">
         <p>THE PLACE Kの“シバヒロ”、建屋イートインスペース（建屋内とデッキ）と<br>
           OUTDOORリビングスペースをお客様主催のイベントスペースとしてご利用頂けます。<br>
           ちょっとしたFES、音楽LIVE、パブリックビューイング、仲間内の集まり、ご家族で、企業、学校や幼稚園、保育園、<br>
           芸術イベントや文化教室、スポーツ系のイベントなど、お客様のアイデア次第で自由にイベントを開催下さい。<br>
           事前予約（開催希望日の1か月前までにご連絡）の上、打合せさせて頂きイベント開催までお手伝いさせて頂きます。<br>
-          （イベントに必要な音楽系機材、マイクやスピーカー、プロジェクターなど当方でご用意できる機材は貸出し料金に含まれています。）<br><br>
+          （イベントに必要な音楽系機材、マイクやスピーカー、プロジェクターなど当方でご用意できる機材は貸出し料金に含まれています。）<br>
           皆様の晴れの舞台、集まりをしっかりと応援させて頂きます。</p>
       </div>
       <div class="col-12 text-center p-3 p-lg-5 wow animated fadeIn">
@@ -405,7 +423,7 @@
     <div class="row m-auto mw9">
       <div class="col-12 my-3 mx-auto position-relative wow animated fadeIn">
         <h1 style="color:#b49d7c">OUTDOORリビングスペース　BBQ、パーティー利用</h1>
-        <img class="position-absolute" style="width: 10%;top: -75%;right: 0%;" src="img/要予約 のコピー 2.png">
+        <img class="position-absolute sp-w20" style="width: 10%;top: -75%;right: 0%;" src="img/要予約 のコピー 2.png">
       </div>
       <div class="col-6 my-2 d-none d-lg-block wow animated fadeIn" style="height: fit-content;">
         <img class="w-100" src="img/丸デッキキャンプ のコピー.png">
@@ -415,7 +433,7 @@
           庭の前にはFIRE　PIT（大きな焚火スペース）もあり、近江牛カフェスタンドのBUTCHER'Sでご用意させて頂くBBQメニューやご相談に応じ、パーティーメニューをご用意させて頂きます。（事前予約制）<br>
           隠れ家にあるリビング前の庭、特別な空間でご家族やご友人の皆さまと特別な時間を過ごして頂けます。
         </p>
-        <div class="py-4 px-3 mt-3 mt-lg-0" style="background-color: #eee7dd;">
+        <div class="py-4 px-2 px-lg-3 mt-3 mt-lg-0" style="background-color: #eee7dd;">
           <h5>【料金】0時間 0,000円（税込み）～</h5>
           <p class="m-0">　※注意事項などを記載できます。注意事項などを記載。</p>
         </div>
@@ -434,7 +452,7 @@
 
   <!-- サービス -->
   <section class="p-0 p-lg-5">
-    <div class="row m-auto p-3 p-lg-5 mw9">
+    <div class="row m-auto p-2 p-lg-5 mw9">
       <div class="col-6 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-225" src="img/4571497_m.png">
         <h3 class="text-center" style="color:#b49d7c">サウナ</h3>
@@ -482,7 +500,7 @@
     </div>
   </section>
 
-  <section class="px-3 px-lg-5">
+  <section class="px-2 px-lg-5">
     <div class="row m-auto mw9 wow animated fadeIn">
       <div class="col-12 col-lg-6 my-3 my-lg-5 position-relative text-center text-lg-start">
         <h1>Access</h1>
@@ -504,7 +522,7 @@
 
 
   <!-- insta -->
-  <section class="p-3 p-lg-5 mt-5" style="background:#fff5e6">
+  <section class="p-2 p-lg-5 mt-5" style="background:#fff5e6">
     <div class="row m-auto mw9 wow animated fadeIn">
       <div class="col-12 my-3 mx-auto text-center position-relative">
         <h1 style="color:#b49d7c">Instagram</h1>
@@ -519,7 +537,7 @@
 
 
   <!-- 周辺施設 -->
-  <section class="p-3 p-lg-5">
+  <section class="p-2 p-lg-5">
     <div class="row m-auto mw9">
       <div class="col-12 my-3 mx-auto text-center position-relative wow animated fadeIn">
         <h1 style="color:#b49d7c">周辺施設のご案内</h1>
@@ -527,68 +545,73 @@
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/白髭神社写真.jpg">
         <p><span style="font-weight:bold">観光①　[歴史]</span><br>
-          浮御堂　車で15分<br>
-          白髭神社　車で37分<br>
-          佐川美術館　車で25分<br>
-          琵琶湖博物館　車で30分<br>
-          比叡山延暦寺　車で21分
+          浮御堂<span class="float-end">15分</span><br>
+          白髭神社<span class="float-end">37分</span><br>
+          佐川美術館<span class="float-end">25分</span><br>
+          琵琶湖博物館<span class="float-end">30分</span><br>
+          比叡山延暦寺<span class="float-end">21分</span>
         </p>
       </div>
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/マキノメタセコイア並木.jpg">
         <p><span style="font-weight:bold">観光②　[レジャー]</span><br>
-          琵琶湖汽船 ミシガンクルーズ（大津港）車で30分<br>
-          びわ湖テラス　車で37分<br>
-          マキノ メタセコイア並木　車で1時間<br>
-          竹生島クルーズのりば（今津港）車で1時間<br>
-          海津大崎　1時間10分
+          琵琶湖汽船<span class="float-end">30分</span><br>
+          びわ湖テラス<span class="float-end">37分</span><br>
+          メタセコイア並木<span class="float-end">1時間</span><br>
+          竹生島クルーズ<span class="float-end">1時間</span><br>
+          海津大崎<span class="float-end">1時間10分</span>
         </p>
       </div>
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/温泉写真.jpg">
         <p><span style="font-weight:bold">公衆浴場・温泉施設</span><br>
-          スパリゾート雄琴 あがりゃんせ　車で16分<br>
-          守山湯元 水春　車で22分<br>
-          天然温泉 比良とぴあ　車で26分
+          あがりゃんせ<span class="float-end">16分</span><br>
+          水春<span class="float-end">22分</span><br>
+          比良とぴあ<span class="float-end">26分</span>
         </p>
       </div>
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/スーパー写真.jpg">
         <p><span style="font-weight:bold">スーパーマーケット</span><br>
-          フレスコ 仰木の里店　車で8分<br>
-          フレンドマート 雄琴駅前店　車で10分<br>
-          ラ・ムー 雄琴店　車で14分<br>
-          トクヤ 大津堅田店　車で15分<br>
-          道の駅 びわ湖大橋米プラザ　車で17分
+          フレスコ<span class="float-end">8分</span><br>
+          フレンドマート<span class="float-end">10分</span><br>
+          ラ・ムー<span class="float-end">14分</span><br>
+          トクヤ<span class="float-end">15分</span><br>
+          道の駅 米プラザ<span class="float-end">17分</span>
         </p>
       </div>
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/ドラッグストア.jpg">
         <p><span style="font-weight:bold">ドラッグストア</span><br>
-          クスリのアオキ 堅田店　車で10分<br>
-          サンドラッグ 雄琴店　車で14分<br>
-          スギ薬局 おごと温泉駅前店　車で10分
+          クスリのアオキ<span class="float-end">10分</span><br>
+          サンドラッグ<span class="float-end">14分</span><br>
+          スギ薬局<span class="float-end">10分</span>
         </p>
       </div>
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/コンビニ写真.jpg">
         <p><span style="font-weight:bold">コンビニ</span><br>
-          Lawson 大津仰木の里東店　車で10分<br>
-          Family Mart 大津雄琴駅前店　車で12分<br>
-          Seven Eleven 大津仰木の里店　車で10分
+          Lawson<span class="float-end">10分</span><br>
+          Family Mart<span class="float-end">12分</span><br>
+          Seven Eleven<span class="float-end">10分</span>
         </p>
       </div>
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/ホームセンター.jpg">
         <p><span style="font-weight:bold">ホームセンター</span><br>
-          コメリホームセンター 堅田店　車で16分<br>
-          アヤハディオ 堅田店　車で13分
+          コメリ<span class="float-end">16分</span><br>
+          アヤハディオ<span class="float-end">13分</span>
         </p>
       </div>
       <div class="col-6 col-lg-3 mx-auto my-3 px-3 wow animated fadeIn" style="height: fit-content;">
         <img class="mb-3 h-160" src="img/キャンプ用品.jpg">
         <p><span style="font-weight:bold">キャンプ用品販売店</span><br>
-          Camp Depo 大津堅田店　車で11分<br>
+          Camp Depo<span class="float-end">11分</span><br>
+        </p>
+      </div>
+      <div class="col-12 mx-auto my-3 px-3 text-center" style="height: fit-content;">
+        <p>
+          ※所要時間は車移動の際の時間です。
         </p>
       </div>
     </div>
@@ -596,16 +619,16 @@
 
 
   <!-- お問い合わせ -->
-  <section class="p-3 p-lg-5" style="background-color: #b49d7c;">
+  <section class="p-2 p-lg-5" style="background-color: #b49d7c;">
     <div class="row m-auto mw9">
       <div class="col-12 my-3 mx-auto text-center text-white wow animated fadeIn">
         <h1>Contacts</h1>
         <p>お問い合わせはこちらから</p>
       </div>
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
         <img class="w-100" src="img/tel.png">
       </div>
-      <div class="col-6 my-2 wow animated fadeIn" style="height: fit-content;">
+      <div class="col-12 col-lg-6 my-2 wow animated fadeIn" style="height: fit-content;">
         <img class="w-100" src="img/line.png">
       </div>
       <div class="col-12 py-3 py-lg-5 wow animated fadeIn">
@@ -641,7 +664,7 @@
     </div>
   </section>
 
-  <!-- フット -->
+  <!-- フッター -->
   <section class="p-3 p-lg-5">
     <div class="row m-auto pt-lg-5 mw9">
       <div class="col-12 col-lg-4 mx-auto my-3 wow animated fadeIn" style="height: fit-content;">
@@ -659,8 +682,46 @@
           <img src="img/ban2.png">
         </a>
       </div>
+    </div>
+    <div class="row m-auto pt-lg-5 mw9">
+      <div class="col-3 col-lg-2 mx-auto my-3">
+        <a href=" #">
+          <img src="img/レイヤー 1.png">
+        </a>
+      </div>
+      <div class="col-9 col-lg-6 mx-auto my-3">
+        <h2 class="mb-lg-4">THE PLACE K</h2>
+        <p>〒000-0000　<br class="d-lg-none">滋賀県OOOOOOOOO</p>
+        <p>Tel.00000000<br class="d-lg-none">（営業時間　8:00~21:30）</p>
+      </div>
+      <div class="col-5 col-lg-2 mx-auto my-3">
+        <ul class="p-0" style="list-style:none;text-decoration: underline;">
+          <li class="mb-4 mb-lg-3">
+            <a href="#1">キャンプ<br>(シバヒロ)</a>
+          </li>
+          <li class="mb-4 mb-lg-3">
+            <a href="#5">イベント利用</a>
+          </li>
+          <li class="mb-4 mb-lg-3">
+            <a href="#4">アクセス</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-7 col-lg-2 mx-auto my-3">
+        <ul class="p-0" style="list-style:none;text-decoration: underline;">
+          <li class="mb-4 mb-lg-3">
+            <a href="#3">近江牛カフェスタンド<br>（BUTCHER'S）</a>
+          </li>
+          <li class="mb-4 mb-lg-3">
+            <a href="#2">施設案内</a>
+          </li>
+          <li class="mb-4 mb-lg-3">
+            <a href="#6">ご利用時間と料金</a>
+          </li>
+        </ul>
+      </div>
       <div class="col-12 text-center pt-5">
-        <p>©2023　THE PLACE K</p>
+        <p><span style="font-family: none;">©</span>2023 THEPLACEK. AllRightsReserved.</p>
       </div>
     </div>
   </section>
@@ -709,6 +770,28 @@
           $('#toptext').fadeIn(400);
         } else {
           $('#toptext').fadeOut(400);
+        }
+      });
+    });
+  </script>
+  <script>
+    jQuery(function ($) {
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() < 10) {
+          $('#toptext-sp').fadeIn(400);
+        } else {
+          $('#toptext-sp').fadeOut(400);
+        }
+      });
+    });
+  </script>
+  <script>
+    jQuery(function ($) {
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 100) {
+          $('#page_top').fadeIn(400);
+        } else {
+          $('#page_top').fadeOut(400);
         }
       });
     });
