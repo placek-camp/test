@@ -23,6 +23,15 @@
 
 <body>
   <a href="#" id="page_top" class="page_top_btn">▲</a>
+  <div class="row w-100 m-0 sp-con text-center d-lg-none">
+    <a href="#" class="col-6 p-2 border-end text-white">
+      <img style="width:1.25rem" src="img/154461.png">
+      <h5 class="d-inline m-0">ご予約</h5>
+    </a>
+    <a href="#contact" class="col-6 p-2 text-white">
+      <h5 class="d-inline m-0">お問い合わせ</h5>
+    </a>
+  </div>
   <section class="bg-mv position-relative">
     <div class="px-1 px-lg-5 position-fixed w-100" style="background:#00000048;z-index: 99999">
       <div class="row m-auto">
@@ -44,16 +53,16 @@
           </div>
         </div>
         <div class="col-2 px-2 d-none d-lg-block">
-          <div class="text-center text-white mt-5 p-3 center box-shadow btn-top" style="margin: 0 0 0 auto;">
+          <a href="#" class="text-center text-white mt-5 p-3 center box-shadow btn-top" style="margin: 0 0 0 auto;">
             <img style="width:1.25rem" src="img/154461.png">
             <h5 class="d-inline m-0 ps-2">ご予約</h5>
-          </div>
+          </a>
         </div>
-        <div class="col-2 px-2 d-none d-lg-block">
+        <a href="#contact" class="col-2 px-2 d-none d-lg-block">
           <div class="text-center text-white mt-5 p-3 center box-shadow btn-top">
             <h5 class="d-inline m-0">お問い合わせ</h5>
           </div>
-        </div>
+        </a>
         <div class="col-1 position-relative">
           <div class="openbtn1 mt-2 mt-lg-5"><span></span><span></span><span></span></div>
           <nav id="g-nav">
@@ -500,22 +509,54 @@
     </div>
   </section>
 
-  <section class="px-2 px-lg-5">
+  <section class="px-2 px-lg-5 pt-4 pt-lg-0">
     <div class="row m-auto mw9 wow animated fadeIn">
-      <div class="col-12 col-lg-6 my-3 my-lg-5 position-relative text-center text-lg-start">
-        <h1>Access</h1>
-        <p>〒520-0354 滋賀県大津市伊香立南庄町2369</p>
-        <h4 class="my-5">ルートマップ</h4>
-        <div class="if">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.2921352912986!2d135.89526311518742!3d35.12438266791639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a01b3cb2b643%3A0x9a57901d3e0c4957!2z44CSNTIwLTAzNTQg5ruL6LOA55yM5aSn5rSl5biC5LyK6aaZ56uL5Y2X5bqE55S677yS77yT77yW77yZ!5e0!3m2!1sja!2sjp!4v1678445141431!5m2!1sja!2sjp"
-            width="100%" height="10vw" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="col-12 col-lg-2 text-center text-lg-start">
+        <h1 class="m-0">Access</h1>
+      </div>
+      <div class="col-12 col-lg-10 text-center text-lg-start p-0">
+        <p class="mt-3 mb-0">〒520-0354 滋賀県大津市伊香立南庄町2369</p>
+      </div>
+      <div class="col-12 col-lg-6 my-3 my-lg-5 pt-3 pt-lg-0 position-relative">
+        <h5>広域マップ</h5>
+        <img class="border" src="img/map1.png">
+        <img class="border d-none d-lg-block position-absolute" style="bottom:0;left: 0" src="img/movie.png">
       </div>
       <div class="col-12 col-lg-6 my-2 my-lg-5">
-        <img src="img/car.png">
-        <img src="img/24966382_m.png">
+        <h5>ルートマップ</h5>
+        <img class="border" src="img/map2.png">
+        <img class="border d-lg-none mt-3" src="img/movie.png">
+      </div>
+      <div class="col-11 mx-auto col-lg-12" style="background-color: #bdad96; border-radius: 5px;">
+        <img class="d-inline-block w-auto m-1 mb-2 sp-w20p" src="img/train.png">
+        <img class="d-inline-block w-auto m-1 mb-2 sp-w20p" src="img/taxi.png">
+        <h3 class="d-inline-block text-white mt-2 mt-lg-3">電車・タクシーのご利用の場合</h3>
+      </div>
+      <div class="col-12">
+        <h5 class="mt-3" style="color:#bdad96">JR京都駅からJR湖西線に乗り換え</h5>
+        <p>●「堅田駅」よりタクシーで約7分（2.9㎞）　<br class="d-lg-none">●「おごと温泉駅」よりタクシーで9分（3.9㎞）</p>
+      </div>
+      <div class="col-11 mx-auto col-lg-12 mt-3 mt-lg-0" style="background-color: #bdad96; border-radius: 5px;">
+        <img class="d-inline-block w-auto m-1 mb-2 sp-w20p" src="img/cars.png">
+        <h3 class="d-inline-block text-white mt-2 mt-lg-3">お車でお越しの場合</h3>
+      </div>
+      <div class="col-12">
+        <h5 class="mt-3" style="color:#bdad96">兵庫・大阪・京都・三重方面からお越しの方</h5>
+        <p>名神「京都東IC」出口から161号線 西大津（湖西）バイパスで「仰木雄琴IC」出口を出て約9分（3.9㎞）（京都東IC出口からは約22分（19km））</p>
+      </div>
+      <div class="col-12">
+        <h5 class="mt-3" style="color:#bdad96">栗東・守山等湖東方面からお越しの方</h5>
+        <p>琵琶湖大橋を渡り、「琵琶湖大橋」交差点を左に西近江路を京都方面へ「仰木口」交差点を山に向かって右に曲がり、「レークピア北口」を通り過ぎ、右手に見える「三谷生コン」の先を右折。広い農道を西大津バイパス沿いに走りTHE
+          PLACE
+          Kに続く山道へ。（琵琶湖大橋からは約12分約5㎞の道のりです。）</p>
+      </div>
+      <div class="col-12">
+        <h5 class="mt-3" style="color:#bdad96">その他各方面からお越しの方</h5>
+        <p>GOOGLE MAPに地点登録しております。<br>
+          お手持ちの携帯のGOOGLE MAPで「THE PLACE K」と入力頂ければ地点、案内表示されますのでご確認にお使い下さい。</p>
+      </div>
+      <div class="col-12">
+        <h5 class="mt-3" style="color:#bdad96">近隣住宅街（天神山の住宅街）を抜ける道は出来る限り避け、車・携帯のナビ等で場所を調べた上、お越しください。</h5>
       </div>
     </div>
   </section>
@@ -619,7 +660,7 @@
 
 
   <!-- お問い合わせ -->
-  <section class="p-2 p-lg-5" style="background-color: #b49d7c;">
+  <section id="contact" class="p-2 p-lg-5" style="background-color: #b49d7c;">
     <div class="row m-auto mw9">
       <div class="col-12 my-3 mx-auto text-center text-white wow animated fadeIn">
         <h1>Contacts</h1>

@@ -347,9 +347,39 @@ iframe {
 .sp-w20{
   width: 20% !important;
 }
+.sp-w20p{
+  width: 20px !important;
+}
 
 .e-back_sp{
   background-image:url(img/event_sp.png) !important;
 }
+
+.page_top_btn {
+  position: fixed;
+    bottom: 50px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    background: rgb(147 50 52);
+    color: #fff !important;
+  transition: 0.3s;
+  z-index: 999;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.sp-con{
+  background: rgb(147 50 52);
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+
 
 }
