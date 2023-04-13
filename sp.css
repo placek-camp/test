@@ -16,10 +16,11 @@ h1, h2,h3,h4,h5,h6,p,a{
   font-family: 'Harenosora';
 }
 .h1, h1 {
-    font-size: calc(1rem + 1vw);
+  font-size: 17px;
+  margin: 0;
 }
 .h3, h3 {
-    font-size: calc(1rem + .1vw);
+  font-size: 15px;
 }
 .h5, h5 {
     font-size: 1rem;
@@ -37,10 +38,14 @@ a{
 }
 
 .text-sp{
-    font-size: 13px
+    font-size: 10px
 }
 .text-sp2{
-    font-size: 19px
+    font-size: 13px
+}
+
+.text-sp3{
+    font-size: 17px
 }
 
 .text-gold{
@@ -53,17 +58,17 @@ a{
     font-size: 1rem;
 }
 
-.fs-1r{
-    font-size: 1rem;
+/* .fs-1r{
+  font-size: 1rem;
 }
 
 .fs-50{
   font-size: 50%;
 }
 
-/* .fs-96{
+.fs-96{
   font-size: 96%;
-} */
+}
 
 .fs-121{
   font-size: 121%;
@@ -75,7 +80,7 @@ a{
 
 .fs-326{
   font-size: 200%;
-}
+} */
 
 .ls-01p{
   letter-spacing: -1px;
@@ -133,11 +138,11 @@ a{
 }
 
 .bg-mv{
-  background-image: url(img/PLACEK施設全体図.png);
+  background-image: url(img/top-sp.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 34vh;
+  height: 50vh;
 }
 
 .bg-icon{
@@ -340,9 +345,14 @@ iframe {
     width: 30%;
 }
 
-
+.sp-top0{
+  top: 0 !important;
+}
 .sp-top-30{
   top: -30% !important;
+}
+.sp-top-190{
+  top: -190% !important;
 }
 .sp-w20{
   width: 20% !important;
@@ -357,15 +367,14 @@ iframe {
 
 .page_top_btn {
   position: fixed;
-    bottom: 50px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
-    font-weight: bold;
-    padding: 5px;
-    text-align: center;
-    background: rgb(147 50 52);
-    color: #fff !important;
+  bottom: 50px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  color: #fff !important;
   transition: 0.3s;
   z-index: 999;
   -webkit-transition: 0.3s;
@@ -381,5 +390,14 @@ iframe {
   z-index: 999;
 }
 
+.indent{
+  text-indent: -1em;
+}
+
+.yoyaku-sp1{
+  width: 20%;
+  bottom: -190%;
+  right: 0%;
+}
 
 }
