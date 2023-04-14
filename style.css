@@ -335,6 +335,9 @@ iframe {
 .slash::after{
   content: "/";
   color: white;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 50%;
   position: absolute;
   top: 25%;
   right: 0;

@@ -18,6 +18,7 @@ h1, h2,h3,h4,h5,h6,p,a{
 .h1, h1 {
   font-size: 17px;
   margin: 0;
+  font-weight: bold;
 }
 .h3, h3 {
   font-size: 15px;
@@ -38,7 +39,7 @@ a{
 }
 
 .text-sp{
-    font-size: 10px
+    font-size: 13px
 }
 .text-sp2{
     font-size: 13px
@@ -283,7 +284,6 @@ iframe {
   padding:10px;
   display: block;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
   font-weight: bold;
 }
 
@@ -367,13 +367,12 @@ iframe {
 
 .page_top_btn {
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
   right: 10px;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   font-weight: bold;
   padding: 5px;
-  text-align: center;
   color: #fff !important;
   transition: 0.3s;
   z-index: 999;
@@ -388,6 +387,7 @@ iframe {
   position: fixed;
   bottom: 0;
   z-index: 999;
+  height: 60px;
 }
 
 .indent{
