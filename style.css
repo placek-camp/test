@@ -105,11 +105,17 @@ a{
 }
 
 .bg-mv{
-  background-image: url(img/PLACEK施設全体図.png);
+  /* background-image: url(img/PLACEK施設全体図.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: 100vh;
+}
+
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
 
 .bg-icon{
@@ -175,9 +181,10 @@ a{
 
 
 .c1 {
-  height: 33vh;
+  height: 41vh;
   object-fit: cover;
-  max-height: 297px;
+  max-height: 345px;
+
 }
 
 iframe {

@@ -139,11 +139,17 @@ a{
 }
 
 .bg-mv{
-  background-image: url(img/top-sp.jpg);
+  /* background-image: url(img/top-sp.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: 50vh;
+}
+
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
 
 .bg-icon{
